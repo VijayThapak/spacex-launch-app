@@ -2,8 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
 }
 
 a {
@@ -13,4 +13,61 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.container-fluid {
+  background-color: #f2f2f2;
+}
+
+.filters-container {
+  padding: 10px 30px;
+  background-color: #ffffff;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.filters-caption {
+  border-bottom: 2px solid #cccccce3;
+  text-align: center;
+}
+
+.filter-btn {
+  background-color: #c5e09b;
+  border: none;
+  padding: 0px 15px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.filter-btn .active,
+.filter-btn:hover,
+.filter-btn:active {
+  background-color: #7cb807;
+  color: #000000;
+}
+
+.btn-success:active:focus {
+  background-color: #7cb807;
+  box-shadow: none;
+  color: #000000;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+.flight {
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.flight-text-color {
+  color: #5f5f98;
+}
+
+.footer {
+  background-color: #ffffff;
 }
