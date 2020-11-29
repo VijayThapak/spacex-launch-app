@@ -22,7 +22,6 @@ export default function Home({ data }) {
       handleNavigation(window.location.search.slice(0, 1));
     }
     return () => {
-      console.log(location);
     }
   }, [])
 
