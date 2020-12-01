@@ -104,7 +104,7 @@ export default function Home({ data }) {
     }]
   },
   {
-    caption: 'Successful Year',
+    caption: 'Successful Launch',
     filters: [{
       label: 'True',
       value: true,
@@ -178,7 +178,7 @@ export default function Home({ data }) {
               <div className="col-sm-12 col-lg-2">
                 <div className="col-12 filters-container">
                   <p className="h5">Filters</p>
-                  <FlightFilter spaceXFilters={spaceXFilters} handleNavigation={handleNavigation}></FlightFilter>
+                  <FlightFilter spaceXFilters={spaceXFilters} appliedFilters={appliedFilters} handleNavigation={handleNavigation}></FlightFilter>
                 </div>
               </div>
               <div className="col-sm-12 col-lg-10">
@@ -202,7 +202,7 @@ export default function Home({ data }) {
 }
 
 export async function getStaticProps(context) {
-  const res = await fetch('https://api.spacexdata.com/v3/launches?limit=100');
+  const res = await fetch(BASE_URL);
   const data = await res.json();
   return {
     props: {
