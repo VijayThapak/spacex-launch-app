@@ -3,7 +3,7 @@ function Flight({ flightData: flight }) {
     <div className="col-sm-12 col-md-6 col-lg-3">
       <div className="flight text-center">
         <div className="product-image">
-          <img src={flight.links.mission_patch_small} alt="image" width="128" height="128" />
+          <img src={flight.links.mission_patch_small} loading="lazy" alt="image" width="128" height="128" />
         </div>
         <div className="flight-caption h5 flight-text-color">{flight.mission_name}</div>
         <div className="flight-details">

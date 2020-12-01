@@ -240,6 +240,7 @@ export default function Home({ data, query }) {
     <div>
       <Head>
         <title>SpaceX Launch App</title>
+        <meta name="description" content="This is a spacex website to show the details of spacex launch."/>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
